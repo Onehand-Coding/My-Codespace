@@ -1,8 +1,8 @@
 [project]
-name = "municipal-assistant"
+name = "office-assistant"
 version = "0.1.0"
-description = "CLI and API for municipal office tasks"
-authors = [{ name = "Your Name", email = "you@example.com" }]
+description = "CLI and API for office office tasks"
+authors = [{ name="Onehand Coding", email="onehand.coding433@gmail.com" }]
 requires-python = ">=3.10"
 dependencies = [
   "typer==0.12.3",
@@ -15,7 +15,7 @@ dependencies = [
 ]
 
 [project.scripts]
-municipal-assistant = "municipal_assistant.cli:app"
+office-assistant = "office_assistant.cli:app"
 
 [tool.uv]
 package = true
@@ -25,5 +25,5 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["municipal_assistant*"]
+include = ["office_assistant*"]
 exclude = ["data*", "tests*"]
